@@ -1,0 +1,23 @@
+{
+  "name": "ghw-auth0-context-assistant",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MLH GHW context-preserving assistant: Auth0 Universal Login, a JWT-protected settings API, and Open-Meteo.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "express-oauth2-jwt-bearer": "^1.7.1",
+    "express-openid-connect": "^2.19.2"
+  },
+  "devDependencies": {
+    "supertest": "^7.1.4"
+  }
+}
